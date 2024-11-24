@@ -3,7 +3,7 @@ kind: Cluster
 metadata:
   name: pi0s-k0s-cluster
 spec:
-  hosts:
+  nodes:
     - ssh:
         address: pi01.pangarabbit.com
         user: root
