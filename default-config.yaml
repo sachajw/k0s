@@ -4,16 +4,16 @@ metadata:
   name: k0s
 spec:
   api:
-    address: 192.168.0.151
+    address: 192.168.0.152
     port: 6443
     k0sApiPort: 9443
     externalAddress: pi0s.pangarabbit.com
     sans:
-      - 192.168.0.151
+      - 192.168.0.152
   storage:
     type: etcd
     etcd:
-      peerAddress: 192.168.0.151
+      peerAddress: 192.168.0.152
   network:
     podCIDR: 10.244.0.0/16
     serviceCIDR: 10.96.0.0/12
