@@ -6,39 +6,39 @@ spec:
   hosts:
     - ssh:
         address: pi01.pangarabbit.com
-        user: tvl
+        user: root
         port: 22
-        keyPath: "/home/tvl/.ssh/pinodes"
+        keyPath: "~/.ssh/pinodes"
       role: controller
     - ssh:
         address: pi02.pangarabbit.com
-        user: tvl
+        user: root
         port: 22
-        keyPath: "/home/tvl/.ssh/pinodes"
+        keyPath: "~/.ssh/pinodes"
       role: controller
     - ssh:
         address: pi03.pangarabbit.com
-        user: tvl
+        user: root
         port: 22
-        keyPath: "/home/tvl/.ssh/pinodes"
+        keyPath: "~/.ssh/pinodes"
       role: controller
     - ssh:
         address: pi04.pangarabbit.com
-        user: tvl
+        user: root
         port: 22
-        keyPath: "/home/tvl/.ssh/pinodes"
+        keyPath: "~/.ssh/pinodes"
       role: worker
     - ssh:
         address: pi05.pangarabbit.com
-        user: tvl
+        user: root
         port: 22
-        keyPath: "/home/tvl/.ssh/pinodes"
+        keyPath: "~/.ssh/pinodes"
       role: worker
     - ssh:
         address: pi06.pangarabbit.com
-        user: tvl
+        user: root
         port: 22
-        keyPath: "/home/tvl/.ssh/pinodes"
+        keyPath: "~/.ssh/pinodes"
       role: worker
   k0s:
     version: 1.31.2+k0s.0
