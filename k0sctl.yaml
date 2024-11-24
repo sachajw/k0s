@@ -5,40 +5,40 @@ metadata:
 spec:
   hosts:
     - ssh:
-        address: 192.168.0.48
+        address: pi01.pangarabbit.com
         user: tvl
         port: 22
-        keyPath: ~/.ssh/pinodes
+        keyPath: "/home/tvl/.ssh/pinodes"
       role: controller
     - ssh:
-        address: 192.168.0.107
+        address: pi02.pangarabbit.com
         user: tvl
         port: 22
-        keyPath: ~/.ssh/pinodes
+        keyPath: "/home/tvl/.ssh/pinodes"
       role: controller
     - ssh:
-        address: 192.168.0.141
+        address: pi03.pangarabbit.com
         user: tvl
         port: 22
-        keyPath: ~/.ssh/pinodes
+        keyPath: "/home/tvl/.ssh/pinodes"
       role: controller
     - ssh:
-        address: 192.168.0.149
+        address: pi04.pangarabbit.com
         user: tvl
         port: 22
-        keyPath: ~/.ssh/pinodes
+        keyPath: "/home/tvl/.ssh/pinodes"
       role: worker
     - ssh:
-        address: 192.168.0.115
+        address: pi05.pangarabbit.com
         user: tvl
         port: 22
-        keyPath: ~/.ssh/pinodes
+        keyPath: "/home/tvl/.ssh/pinodes"
       role: worker
     - ssh:
-        address: 192.168.0.23
+        address: pi06.pangarabbit.com
         user: tvl
         port: 22
-        keyPath: ~/.ssh/pinodes
+        keyPath: "/home/tvl/.ssh/pinodes"
       role: worker
   k0s:
     version: 1.31.2+k0s.0
