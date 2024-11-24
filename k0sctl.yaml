@@ -5,6 +5,8 @@ metadata:
 spec:
   hosts:
     - role: controller
+      installFlags:
+        - --debug
       ssh:
         address: "pi01.pangarabbit.com"
         user: root
@@ -14,6 +16,8 @@ spec:
         #   ForwardAgent: true # -o ForwardAgent=yes
         #   StrictHostkeyChecking: false # -o StrictHostkeyChecking: no
     - role: controller
+      installFlags:
+        - --debug
       ssh:
         address: "pi02.pangarabbit.com"
         user: root
@@ -23,6 +27,8 @@ spec:
         #   ForwardAgent: true # -o ForwardAgent=yes
         #   StrictHostkeyChecking: false # -o StrictHostkeyChecking: no
     - role: controller
+      installFlags:
+        - --debug
       ssh:
         address: "pi03.pangarabbit.com"
         user: root
@@ -32,6 +38,8 @@ spec:
         #   ForwardAgent: true # -o ForwardAgent=yes
         #   StrictHostkeyChecking: false # -o StrictHostkeyChecking: no
     - role: worker
+      installFlags:
+        - --debug
       ssh:
         address: "pi04.pangarabbit.com"
         user: root
@@ -41,6 +49,8 @@ spec:
         #   ForwardAgent: true # -o ForwardAgent=yes
         #   StrictHostkeyChecking: false # -o StrictHostkeyChecking: no
     - role: worker
+      installFlags:
+        - --debug
       ssh:
         address: "pi05.pangarabbit.com"
         user: root
@@ -50,6 +60,8 @@ spec:
         #   ForwardAgent: true # -o ForwardAgent=yes
         #   StrictHostkeyChecking: false # -o StrictHostkeyChecking: no
     - role: worker
+      installFlags:
+        - --debug
       ssh:
         address: "pi06.pangarabbit.com"
         user: root
