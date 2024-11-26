@@ -1,7 +1,7 @@
 apiVersion: k0sctl.k0sproject.io/v1beta1
 kind: Cluster
 metadata:
-  name: pi0s-k0s-cluster
+  name: pi0s-cluster
 spec:
   hosts:
     - role: worker

@@ -1,14 +1,14 @@
 apiVersion: k0s.k0sproject.io/v1beta1
 kind: ClusterConfig
 metadata:
-  name: k0s
+  name: pi0s-cluster
 spec:
   api:
     address: 192.168.68.104
     k0sApiPort: 9443
     port: 6443
     sans:
-    - 192.168.68.104
+      - 192.168.68.104
   controllerManager: {}
   extensions:
     helm:

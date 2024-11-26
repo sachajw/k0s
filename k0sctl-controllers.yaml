@@ -1,7 +1,7 @@
 apiVersion: k0sctl.k0sproject.io/v1beta1
 kind: Cluster
 metadata:
-  name: pi0s-k0s-cluster
+  name: pi0s-cluster
 spec:
   hosts:
     - role: controller
@@ -34,7 +34,7 @@ spec:
       apiVersion: k0s.k0sproject.io/v1beta1
       kind: ClusterConfig
       metadata:
-        name: pi0s-k0s-cluster
+        name: pi0s-cluster
       spec:
         api:
           address: 192.168.0.152
