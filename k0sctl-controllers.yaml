@@ -37,16 +37,16 @@ spec:
         name: pi0s-cluster
       spec:
         api:
-          address: 192.168.0.152
+          address: 192.168.0.48
           port: 6443
           k0sApiPort: 9443
           externalAddress: pi0s.pangarabbit.com
           sans:
-            - 192.168.0.152
+            - 192.168.0.48
         storage:
           type: etcd
           etcd:
-            peerAddress: 192.168.0.152
+            peerAddress: 192.168.0.48
         network:
           podCIDR: 10.244.0.0/16
           serviceCIDR: 10.96.0.0/12
